@@ -15,7 +15,7 @@ var PuestoLaboralSchema = new Schema({
     puesto: {
         type: String,
         required: true
-    }
+    },
     sueldo: {
         type: String
     },
