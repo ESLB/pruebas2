@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    //- metta
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+    //- styles
+    link(rel="stylesheet", href="./css/main.css")
+    link(rel="stylesheet", href="./css/header.css")
+    link(rel="stylesheet", href="./css/menu-options.css")
+
+    //- fonts
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    title Inicio
+  body
+    header
+      .menu#menu &#9776;
+      div
+        a(href="#")
+          img(src="./images/logo.png", alt="logo").logo
+      div
+        ul.option-links#option-links
+          li
+            input(type="text", placeholder="Buscar...").search
+          li
+            a(href="#").option-link Publicar
+          li
+            a(href="#").option-link Iniciar Sesión
+          li
+            a(href="#").option-link Regístrare
+
+    ul.menu-options
+      li
+        a(href="#").menu-option ¿Quienes somos?
+      li
+        a(href="#").menu-option Eventos
+      li
+        a(href="#").menu-option Bolsa de trabajo
+      li
+        a(href="#").menu-option Agenda
+      li
+        a(href="#").menu-option Contáctanos
+
+    block container
+
+    script(src="./js/header.js")
+    

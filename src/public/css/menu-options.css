@@ -1,0 +1,41 @@
+.menu-options {
+  margin-top: 60px;
+  box-shadow: 0 1px 12px #b1b1b1;
+  display: flex;
+  flex-wrap: wrap;
+  background-color:#0063a0;
+}
+.menu-options > li {
+  width: calc(100% / 3);
+}
+.menu-options > li:nth-child(4),
+.menu-options > li:nth-child(5) {
+  width: 50%;
+}
+.menu-option {
+  padding: 12px 0;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  color: #fff;
+}
+.menu-option:hover {
+  background-color:#005488;
+}
+
+@media only screen and (min-width: 600px) {
+  .menu-options > li {
+    width: calc(100% / 5);
+  }
+  .menu-options > li:nth-child(4),
+  .menu-options > li:nth-child(5) {
+    width: calc(100% / 5);
+  }
+
+  .menu-options {
+    margin-top: 70px;
+  }
+  .menu-option {
+    padding: 14px 0;
+  }
+}
