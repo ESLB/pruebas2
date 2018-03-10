@@ -1,4 +1,5 @@
 .carousel-item > img{
+    margin-left: 2.3em;
     height: 80vh;
     width: auto;
 }

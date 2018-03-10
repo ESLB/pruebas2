@@ -4,7 +4,7 @@
   box-shadow: 0 1px 12px #b1b1b1;
   display: flex;
   flex-wrap: wrap;
-  background-color:#fff;
+  background-color:rgb(186, 186, 187);
 }
 .menu-options > li {
   width: calc(100% / 3);
