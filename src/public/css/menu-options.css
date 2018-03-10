@@ -1,5 +1,6 @@
 .menu-options {
   margin-top: 60px;
+  margin-bottom: 0;
   box-shadow: 0 1px 12px #b1b1b1;
   display: flex;
   flex-wrap: wrap;
@@ -13,10 +14,10 @@
   width: 50%;
 }
 .menu-option {
-  padding: 12px 0;
+  padding: 3px 0;
   text-align: center;
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: #000;
 }

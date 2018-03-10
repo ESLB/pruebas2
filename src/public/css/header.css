@@ -51,6 +51,7 @@ header {
 .option-links--open {
   height: 180px;
   padding: 10px 0;
+  z-index: 1000;
 }
 
 .option-link {
