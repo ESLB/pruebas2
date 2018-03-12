@@ -3,20 +3,20 @@
   margin-bottom: 0;
   display: none;
   padding: 10px 0;
-  background-color:#0b6399;
+  background-color:#8b9499;
 }
 
 .menu-option {
   padding: 3px 0;
   text-align: center;
   display: block;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 25px;
+  font-weight: lighter;
   color: rgb(255, 255, 255);
-  font-family: 'Signika Negative', sans-serif;
+  font-family: 'Boogaloo', cursive;
 }
 .menu-option:hover {
-  color:#92da75;
+  color:#c4c4c4;
   font-weight: bolder;
 }
 
@@ -42,6 +42,10 @@
     display: flex;
     justify-content: space-around;
     padding: 5px 0;
-    background-color:#0b6399;
+    background-color:#fafafa;
   }
+  .menu-option {
+    color: rgb(0, 0, 0);
+    font-family: 'Boogaloo', cursive;
+}
 }
