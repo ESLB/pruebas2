@@ -10,13 +10,13 @@
   padding: 3px 0;
   text-align: center;
   display: block;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: lighter;
   color: rgb(255, 255, 255);
   font-family: 'Boogaloo', cursive;
 }
 .menu-option:hover {
-  color:#c4c4c4;
+  color:#000000;
   font-weight: bolder;
 }
 
@@ -42,7 +42,7 @@
     display: flex;
     justify-content: space-around;
     padding: 5px 0;
-    background-color:#fafafa;
+    background-color:#d9d9fa;
   }
   .menu-option {
     color: rgb(0, 0, 0);

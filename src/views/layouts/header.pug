@@ -22,37 +22,71 @@ html(lang="en")
 
     title Inicio
   body
+
+    .modal.fade(id="exampleModal", tabindex="-1", role="dialog", aria-labelledby="exampleModalLabel", aria-hidden="true")
+      .modal-dialog(role="document")
+        .modal-content
+          .modal-header
+            h5.modal-title(id="exampleModalLabel") Robótica e Internet de las Cosas
+            button.close(type="button",data-dismiss="modal", aria-label="Close")
+              span(aria-hidden="true") &times;
+          .modal-body
+            .container-fluid
+              .row
+                .col-12
+                  img.img-fluid(src="./images/events/Arduino-Day.jpg", alt="img1")
+                .col-12
+                  p.text-justify Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere a temporibus sapiente, obcaecati qui vel omnis dicta quaerat voluptatibus, dolor, distinctio tempora consectetur soluta. Numquam asperiores vel sint modi pariatur.
+              .row
+                i.material-icons#iconBlack event
+                p#informationEvent Sabado 23 de Febrero
+              .row
+                i.material-icons#iconBlack watch_later
+                p#informationEvent 9:00 am
+              .row
+                i.material-icons#iconBlack attach_money
+                p#informationEvent Gratis
+              .row
+                i.material-icons#iconBlack pin_drop
+                p#informationEvent Lima - Chorillos Municipalidad
+              .row
+                .col-12
+                  #map.text-center
+          .modal-footer
+            button.btn.btn-secondary(type="button",data-dismiss="modal") Close
+
     header.fixed-top
-      div
-        a(href="home.html")
-          h1.logo WOLAPP
+      a(href="home.html")
+        img(src="./images/koala.png", alt="koala").logoWolap
+      a(href="home.html")
+        h1.logo WOLAPP
       ul
-        a.menu-option(href="#") Eventos
+        a.menu-option(href="events.html") Eventos
         a.menu-option(href="#") Bolsa de trabajo
         a.menu-option(href="#") Agenda
         a.menu-option(href="#") Publicar
-
-          
       div
-        ul.option-links#option-links
-          li
-            input(type="text", placeholder="Buscar...").search
-          li
-            a(href="#").option-link
-              i.material-icons account_circle
+        input(type="text", placeholder="Buscar...").search
+        a(href="#")
+          i.material-icons account_circle
 
     ul.menu-options.fixed-top.nav-options
-      a(href="#").menu-option Eventos
+      a(href="events.html").menu-option Eventos
       a(href="#").menu-option Bolsa de trabajo
       a(href="#").menu-option Agenda
       a(href="#").menu-option Publica
     block container
 
+    
+
     footer.fixed-bottom.row
       span.mx-auto Todos los derechos reservados FindUs
+    
+    
        
     script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js", integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q", crossorigin="anonymous")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js", integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", crossorigin="anonymous")
     script(src="./js/app.js")
+    script(async, defer, src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7OZ6lHBNCgOSu6pa8nJ3Jf2zR0-t_ilM&callback=initMap")
     
