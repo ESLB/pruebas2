@@ -41,7 +41,7 @@ header {
 }
 
 /* logo */
-h1 {
+h1, h2 {
   margin-left: 0;
   margin-top: 10px;
   color: #fff;

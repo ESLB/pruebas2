@@ -60,14 +60,19 @@ body{
    font-weight: lighter;
  }
  .imgEvent{
-   width: 95%;
-   height: 10em;
+   width: 97%;
+   height: 9em;
  }
  .justify-content-md-center{
   margin-bottom: 1em;
  }
- .no-gutters {
-  padding-right: 0.6em;
-  background-color: #fff;
-  cursor: pointer;
+.no-gutters {
+    width: 100%;
+    padding-right: 0.6em;
+    background-color: #fff;
+    cursor: pointer;
+}
+.imgEvent:hover{
+  background-color: rgba(0,0,0,0.8);
+  filter:brightness(0.6);
 }
