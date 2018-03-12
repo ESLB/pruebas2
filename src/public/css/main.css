@@ -15,10 +15,33 @@ img {
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
 ul,
 ol {
   list-style: none;
+  margin: 0;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+body{
+  background-color: #0076be;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+body{
+  margin-top: 60px;
+}
+.inline{
+  display: inline;
 }

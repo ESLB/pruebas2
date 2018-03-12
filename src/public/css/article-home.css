@@ -1,4 +1,29 @@
 .img-article{
     width: 100%;
-    height: 11em;
+    height: 35vh;
+    cursor: pointer;
+}
+@media (min-width: 420px) and (max-width: 576px) {
+    .img-article{
+        width: 50%;
+        height: 11em;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .img-article{
+        width: 100%;
+        height: 8.6em;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .img-article{
+        width: 100%;
+        height: 8.65em;
+    }
+}
+@media (min-width: 1200px) {
+    .img-article{
+        width: 100%;
+        height: 28.35vh;
+    }
 }

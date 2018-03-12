@@ -7,69 +7,52 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
 
     //- styles
-    link(href="https://use.fontawesome.com/releases/v5.0.6/css/all.css", rel="stylesheet")
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/css?family=Boogaloo", rel="stylesheet")
     link(rel="stylesheet", href="./css/main.css")
     link(rel="stylesheet", href="./css/header.css")
     link(rel="stylesheet", href="./css/menu-options.css")
     link(rel="stylesheet", href="./css/carousel.css")
     link(rel="stylesheet", href="./css/article-home.css")
-    link(rel="stylesheet", href="./css/menu-flotante.css")
+    link(rel="stylesheet", href="./css/footer.css")
 
     //- fonts
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Boogaloo|Signika+Negative", rel="stylesheet")
 
     title Inicio
   body
-    header
-      .menu#menu &#9776;
+    header.fixed-top
       div
         a(href="home.html")
-          img(src="./images/logo.png", alt="logo").logo
+          h2.logo WOLAPP
+      ul
+        a.menu-option(href="#") Eventos
+        a.menu-option(href="#") Bolsa de trabajo
+        a.menu-option(href="#") Agenda
+        a.menu-option(href="#") Publicar
+
+          
       div
         ul.option-links#option-links
           li
             input(type="text", placeholder="Buscar...").search
           li
-            a(href="#").option-link Publicar
-          li
-            a(href="#").option-link Iniciar Sesión
-          li
-            a(href="#").option-link Regístrarme
+            a(href="#").option-link
+              i.material-icons account_circle
 
-    ul.menu-options
-      li
-        a(href="#").menu-option ¿Quiénes somos?
-      li
-        a(href="#").menu-option Eventos
-      li
-        a(href="#").menu-option Bolsa de trabajo
-      li
-        a(href="#").menu-option Agenda
-      li
-        a(href="#").menu-option Contáctanos
-
-    .social
-          ul
-            li.li-menu-red-social
-              a.icon-facebook(href="https://www.facebook.com/UNMSMapp/", target="_blank")
-               i.fab.fa-facebook-f
-            li.li-menu-red-social
-              a.icon-twitter(href="#", target="_blank")
-               i.fab.fa-twitter
-            li.li-menu-red-social
-              a.icon-googleplus(href="#", target="_blank")
-               i.fab.fa-instagram
-            li.li-menu-red-social
-              a.icon-pinterest(href="mailto:brendamesiasvillar@gmail.com", target="_blank")
-                i.far.fa-envelope
-
+    ul.menu-options.fixed-top.nav-options
+      a(href="#").menu-option Eventos
+      a(href="#").menu-option Bolsa de trabajo
+      a(href="#").menu-option Agenda
+      a(href="#").menu-option Publica
     block container
-       
 
+    footer.fixed-bottom.row
+      span.mx-auto Todos los derechos reservados FindUs
+       
     script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js", integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q", crossorigin="anonymous")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js", integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", crossorigin="anonymous")
-    script(src="./js/header.js")
     script(src="./js/app.js")
     

@@ -3,7 +3,7 @@ extends ./layouts/header.pug
 
 block container
 
-  .container-fluid
+  .container-fluid.carouselContainer
     .row
       .col-12.col-sm-12.col-md-9
         .carousel.slide(id="carouselExampleIndicators", data-ride="carousel")
@@ -25,14 +25,33 @@ block container
             span.sr-only Previous
 
           a.carousel-control-next(href="#carouselExampleIndicators", role="button", data-slide="next")
-            span.carousel-control-next-icon(aria-hidden="true")
+            span.carousel-center-next-icon(aria-hidden="true")
             span.sr-only Next
-      .col-12.col-sm-5.col-md-3
+      .col-12.col-sm-6.col-md-3
+        .row
+          img.img-article(src="images/events/Arduino-Day.jpg", alt="img1",data-toggle="modal", data-target="#exampleModal")
+        .row
+          img.img-article(src="images/events/Constructora-exito.jpg", alt="img1")
+        .row
+          img.img-article(src="images/events/IV-encuentro-Investigacion.jpg", alt="img1")
+      .col-12.col-sm-6.col-md-3
         .row
           img.img-article(src="images/events/Arduino-Day.jpg", alt="img1")
         .row
           img.img-article(src="images/events/Constructora-exito.jpg", alt="img1")
         .row
           img.img-article(src="images/events/IV-encuentro-Investigacion.jpg", alt="img1")
-    footer.row
-      span Todos los derechos reservados FindUs
+
+  .modal.fade(id="exampleModal", tabindex="-1", role="dialog", aria-labelledby="exampleModalLabel", aria-hidden="true")
+    .modal-dialog(role="document")
+      .modal-content
+        .modal-header
+          h5.modal-title(id="exampleModalLabel") Robótica e Internet de las Cosas
+          button.close(type="button",data-dismiss="modal", aria-label="Close")
+            span(aria-hidden="true") &times;
+        .modal-body
+          span hola mundo
+        .modal-footer
+          button.btn.btn-secondary(type="button",data-dismiss="modal") Close
+          button.btn.btn-primary(type="button") Save changes
+      
