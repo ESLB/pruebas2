@@ -9,12 +9,12 @@ html(lang="en")
     //- styles
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", crossorigin="anonymous")
     link(href="https://fonts.googleapis.com/css?family=Boogaloo", rel="stylesheet")
-    link(rel="stylesheet", href="./css/main.css")
-    link(rel="stylesheet", href="./css/header.css")
-    link(rel="stylesheet", href="./css/menu-options.css")
-    link(rel="stylesheet", href="./css/carousel.css")
-    link(rel="stylesheet", href="./css/article-home.css")
-    link(rel="stylesheet", href="./css/footer.css")
+    link(rel="stylesheet", href="./src/public/css/main.css")
+    link(rel="stylesheet", href="./src/public/css/header.css")
+    link(rel="stylesheet", href="./src/public/css/menu-options.css")
+    link(rel="stylesheet", href="./src/public/css/carousel.css")
+    link(rel="stylesheet", href="./src/public/css/article-home.css")
+    link(rel="stylesheet", href="./src/public/css/footer.css")
 
     //- fonts
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
@@ -22,6 +22,7 @@ html(lang="en")
 
     title Inicio
   body
+
 
     .modal.fade(id="exampleModal", tabindex="-1", role="dialog", aria-labelledby="exampleModalLabel", aria-hidden="true")
       .modal-dialog(role="document")
@@ -34,7 +35,7 @@ html(lang="en")
             .container-fluid
               .row
                 .col-12
-                  img.img-fluid(src="./images/events/Arduino-Day.jpg", alt="img1")
+                  img.img-fluid(src="./src/public/images/events/Arduino-Day.jpg", alt="img1")
                 .col-12
                   p.text-justify Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere a temporibus sapiente, obcaecati qui vel omnis dicta quaerat voluptatibus, dolor, distinctio tempora consectetur soluta. Numquam asperiores vel sint modi pariatur.
               .row
@@ -56,9 +57,9 @@ html(lang="en")
             button.btn.btn-secondary(type="button",data-dismiss="modal") Close
 
     header.fixed-top
-      a(href="home.html")
-        img(src="./images/koala.png", alt="koala").logoWolap
-      a(href="home.html")
+      a(href="index.html")
+        img(src="./src/public/images/koala.png", alt="koala").logoWolap
+      a(href="index.html")
         h1.logo WOLAPP
       ul
         a.menu-option(href="events.html") Eventos
@@ -87,6 +88,6 @@ html(lang="en")
     script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js", integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q", crossorigin="anonymous")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js", integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", crossorigin="anonymous")
-    script(src="./js/app.js")
+    script(src="./src/public/js/app.js")
     script(async, defer, src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7OZ6lHBNCgOSu6pa8nJ3Jf2zR0-t_ilM&callback=initMap")
     

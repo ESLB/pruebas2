@@ -3,7 +3,7 @@
   margin-bottom: 0;
   display: none;
   padding: 10px 0;
-  background-color:#8b9499;
+  background-color:#7eb4ee;
 }
 
 .menu-option {
@@ -42,7 +42,7 @@
     display: flex;
     justify-content: space-around;
     padding: 5px 0;
-    background-color:#d9d9fa;
+    background-color:#7eb4ee;
   }
   .menu-option {
     color: rgb(0, 0, 0);
